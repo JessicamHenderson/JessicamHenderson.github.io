@@ -1,0 +1,3 @@
+to do this, one must understand ajax and xml. ajax is what allows you to update a web page without reloading the page, request data from a server, receive data from a server, and send data to the server in the background. AJAX = Asynchronous JavaScript And XML. Asynchronous means that you don't have too update the whole page- just part of it.
+
+It is not possible too see this text unless this file is hosted on a server. 
