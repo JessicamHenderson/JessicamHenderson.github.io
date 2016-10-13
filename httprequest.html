@@ -4,18 +4,30 @@
 
 <div id="id01"> </div>
 
-<button type="button" onclick="loadDoc()">Change Content</button>
 
 <script>
-    function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
+
+
+var xmlhttp = new XMLHttpRequest();
+var url = "xmlhttp_info.txt";
+
+xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("id01").innerHTML = this.responseText;
+        var myArr = JSON.parse(this.responseText);
+        myFunction(myArr);
     }
-  };
-  xhttp.open("GET", "xmlhttp_info.txt", true);
-  xhttp.send();
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out += '<a href="' + arr[i].url + '">' + 
+        arr[i].display + '</a><br>';
+    }
+    document.getElementById("id01").innerHTML = out;
 }
 </script>
 
