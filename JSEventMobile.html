@@ -1,0 +1,57 @@
+<!-- onLoad and onTouchBegin are html dom events. Events are usually used with functions, and the functions won't be used until someone starts something. -->
+
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	#showDIV {
+		margin: 10px;
+		width: 100px;
+		height: 90px;
+		background: green;
+		font-size: 15px;
+
+	}
+	#anotherDIV{
+		width: 100px;
+		height: 100px;
+		background: green;
+		transition: width 2s;
+	}
+	#anotherDIV:hover {
+		width: 600px;
+	}
+
+	@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+</style>
+<body onLoad="AnnoyThem()">
+
+<p>Mouse over this wonderful picture too see it get bigger and then smaller for an example of a html dom event.</p>
+
+<img onmouseenter="bigImg(this)" 
+onmouseleave="smallImg(this)" border="0" src="dailydawdle.jpg" alt="beautiful" width="600" height="300">
+
+<p>onTouchBegin doesn't seem to actually exist. Just ontouchstart. However, onLoad does exist. For example, the alert you had to click okay on when the page loaded is a onLoad event.</p>
+
+<p>There's also plenty of Animation Events. for example, the div belows me uses a animationstart, iteration, and end to a div element too create a animation effect.</p>
+
+<div id="showDIV" onclick="functionStarting()"> Click to begin</div>
+
+<p>For a Transition Event there is only transitionend.</p>
+
+<div id="anotherDIV">Hover here</div>
+
+
+<script SRC="JSEvent.js">
+
+</script>
+
+</body>
+</html>

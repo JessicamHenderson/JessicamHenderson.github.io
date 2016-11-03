@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<style>
+div {
+	width: 50px;
+	height: 60px;
+	background: green;
+	transition: width 4s;
+}
+
+#div1 {transition-timing-function: linear;}
+
+div:hover {
+	width: 600px;
+	background: blue;
+}
+
+
+#div2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 8;
+}
+
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+</style>
+
+<body>
+<p>Here's a transition: Hover over it and see how it changes.</p>
+<div id="div1">600 px</div></br>
+
+<p>Here's an animation- it's busy flashing away. Make sure your browser is current too see it.</p>
+
+<div id="div2">flashy</div>
+
+	<script>
+	
+	</script>
+</body>
+</html>

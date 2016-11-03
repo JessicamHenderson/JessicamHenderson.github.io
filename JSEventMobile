@@ -1,0 +1,8 @@
+<!-- onLoad and TouchBgin are gtml dom events. Events are usually used with functions, and the functions won't be used until someone starts something. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<img onmouseenter="bigImg(this)" 
+onmouseleave="normalImg(this)" border="0" src="dailydawdle.jpg" alt="Smiley" width="32" height="32">
