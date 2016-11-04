@@ -1,0 +1,55 @@
+<!--Designing, Defining, and Triggering CSS3 Animations without Custom Libraries (Thought Library)-->
+
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+
+#ex1{
+            width:200px;
+            height:200px;
+            background:#07c6b6;
+            animation-name: example;
+    	animation-duration: 5s;
+}
+
+@keyframes example {
+    from {background-color: #07c6b6;}
+    to {background-color: yellow;}
+}
+
+#ex2{
+	width:200px;
+    height:200px;
+    background:#07f6b6;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example2 {
+	0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:50px;}
+    50%  {background-color:blue; left:600px; top:200px;}
+    75%  {background-color:green; left:90px; top:200px;}
+    100% {background-color:red; left:10px; top:50px;}
+}
+</style>
+
+<body>
+
+	<p>A CSS3 animation allows an element too gradually change from one style to another. It does this through the use of keyframes. or durations.</p>
+
+	<div id="ex1">No keyframe</div>
+
+	<p>You can also move things around, make sure things go on forever, and alternate (i.e. reverse) what you want seen/done.</p>
+
+	<div id="ex2">Let's move</div>
+
+
+	<script type="text/javascript"></script>
+</body>
+</html>

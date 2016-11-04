@@ -1,0 +1,52 @@
+<!-- Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries (Thought Library) -->
+
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+body > div
+{
+            width:200px;
+            height:200px;
+            background:#07c6b6;
+            transition:all 0.3s ease;
+}
+.shrink:hover
+{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+.multie:hover
+{ text-transform:uppercase;
+    text-decoration:none;
+    color:#046823;
+     box-shadow:
+                1px 1px #53a7ea,
+                4px 4px #640566,
+                8px 8px #03183a;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);}
+
+</style>
+
+<body>
+<p>A library is a packaged code that developers can use in projects and helps prevent reinventing the wheel. It helps cut down on the number of copy-pasting. A library ought to be one file, maintained seperately. JQuery is a library, and so is Javascript. When you create your own, it becoms customized, which is something we're trying to avoid in these examples.</p>
+
+<p>When we talk about designing, defining, and triggering in coding terms, designing is the idea of what you want. I want a square to become a circle when someone hovers over it. Defining is when you use the code to create that transition, and triggering is when something happens to make that transition happen. All within the css3 (which doesn't work well with safari/chrome) library- no customs allowed!</p>
+
+<p>Transitions are a visual effect that allows one too use transform properties smoothly instead of all at once.</p>
+
+<div class="shrink">Hover to Shrink</div>
+
+<p>Now that that's out of the way: Something that uses multiple transitions at once! It'll change the text color as well as the box shadow. Not much, I know.</p>
+
+<div class="multie">hover plz</div>
+
+<p>However, those are examples of transforms with transitions. It's hard to show off only transitions.</p>
+
+
+	<script>
+	</script>
+
+</body>
+</html>
