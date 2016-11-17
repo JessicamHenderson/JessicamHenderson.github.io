@@ -1,11 +1,14 @@
-function bigImg(x) {
-    x.style.height = "600px";
-    x.style.width = "800px";
+document.getElementById("makeBigger").addEventListener("mouseenter", bigImg);
+document.getElementById("makeBigger").addEventListener("mouseleave", smallImg);
+
+function bigImg() {
+    document.getElementById("makeBigger").style.height = "600px";
+    document.getElementById("makeBigger").style.width = "800px";
 }
 
-function smallImg(x) {
-    x.style.height = "100px";
-    x.style.width = "200px";
+function smallImg() {
+    document.getElementById("makeBigger").style.height = "100px";
+    document.getElementById("makeBigger").style.width = "200px";
 }
 
 function AnnoyThem() {
