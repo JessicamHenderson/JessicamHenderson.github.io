@@ -1,0 +1,29 @@
+<!--combine JSON & Local storage for a user to store and retrieve data. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Fill in the form, but don't hit submit! First, close the page and open it back up. All the text should be there when you open it up!</p>
+
+<!--Create a form. type should be text, creating a text form. Give it unique names and id's, that are the same so it'll know exactly where to go. The class should be same across the form- this is what goes to the jquery. -->
+<form id="localTest" method="post" action="">
+    <label>Name:</label>
+    <input type="text" name="name" id="name" class="stored" value="" />
+
+    </br><label>Mythical Beast:</label>
+    <input type="text" name="MythBeast" id="MythBeast" class="stored" value="" />
+
+    </br><label>Favorite Fruit:</label>
+    <textarea name="FruityFruit" id="FruityFruit" class="stored"></textarea>
+
+    <!--This isn't an actual button calling for a function, but an onclick listener is listening. -->
+    <input type="submit" class="demo-button" value="Submit" />
+</form>
+
+<script src="StorageJquery.js">
+
+</script>
+
+</body>
+</html>
