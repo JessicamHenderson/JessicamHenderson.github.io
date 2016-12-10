@@ -1,0 +1,110 @@
+<HTML>
+
+	<TITLE>Simple Notepad</TITLE>
+
+	<HEAD>
+	<link rel="stylesheet" href="styleref.css">
+
+	<script src="calculations.js">
+
+	
+	</SCRIPT>
+
+	</HEAD>
+
+	<BODY onload="load_text()">
+
+	<div style="width:48%; display:inline-block;">
+
+<ul class="tab">
+  <li><a href="#" class="tablinked" onclick="openTabs(event, 'Weight')">Weight</a></li>
+  <li><a href="#" class="tablinked" onclick="openTabs(event, 'Length')">Length</a></li>
+  <li><a href="#" class="tablinked" onclick="openTabs(event, 'Temperature')">Temperature</a></li>
+  <li><a href="#" class="tablinked" onclick="openTabs(event, 'Speed')">Speed</a></li>
+  <li><a href="#" class="tablinked" onclick="openTabs(event, 'Video')">Song</a></li>
+</ul>
+
+<div id="Weight" class="tabcontent">
+  <h3>Weight</h3>
+  <p>
+  	<label>Pounds</label>
+  	<input id="inPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+  	</p>
+  	<p>
+  		<label>Ounces</label>
+  		<input id="inOz" type="number" placeholder="Ounces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+  	</p>
+  	<p>
+  	<label>Kilograms</label>
+  	<input id="inKilograms" type="number" placeholder="Kilograms" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+  	</p>
+</div>
+
+<div id="Length" class="tabcontent">
+  <h3>Length</h3>
+  <label>Feet</label>
+  	<input id="inputFeet" type="number" placeholder="Feet" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  	</p>
+  	<label>Meters</label>
+  	<input id="inputMeters" type="number" placeholder="Meters" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  	</p>
+  	<label>Miles</label>
+  	<input id="inputMiles" type="number" placeholder="Miles" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  	</p>
+  	<label>Yards</label>
+  	<input id="inputYards" type="number" placeholder="Yards" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  	</p>
+  	<label>Kilometers</label>
+  	<input id="inputKilometers" type="number" placeholder="Kilometers" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+  	</p>
+</div>
+
+<div id="Temperature" class="tabcontent">
+  <h3>Temperature</h3>
+  <label>Fahrenheit</label>
+  	<input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+  	</p>
+  	<label>Celsius</label>
+  	<input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+  	</p>
+  	<label>Kelvin</label>
+  	<input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+  	</p>
+</div>
+
+<div id="Speed" class="tabcontent">
+	<h3>Speed</h3>
+	<label>Miles Per Hour</label>
+	<input id="inputMPH" type="number" placeholder="MPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+	</p>
+	<label>Kilometers Per Hour</label>
+	<input id="inputKPH" type="number" placeholder="KPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+	</p>
+	<label>Speed of Light</label>
+	<input id="inputSol" type="number" placeholder="SoL" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+	</p>
+</div>
+
+<div id="Video" class="tabcontent">
+<h3>Song of Conversion</h3>
+<video width="720" height="420" controls>
+<source src="metric system song.mp4" type="video/mp4">
+</video>
+</div>
+
+
+
+</div>
+
+	<div id="formArea">
+	<FORM NAME="controls" ID="controls">
+
+	<TEXTAREA name="inputArea" id="output" name="output" rows="9" wrap="virtual" cols=48></TEXTAREA>
+
+	<p><INPUT TYPE="reset" VALUE="Clear"></P>
+	<button onclick="store()" type="button">Store Data</button>
+	</FORM>
+	</div>
+	</BODY>
+
+	</HTML>	

@@ -1,0 +1,68 @@
+body {font-family: "Lato", sans-serif;}
+
+#formarea {
+    width:48%; 
+    overflow:auto;
+    display:inline-block; 
+    position:absolute;
+    background-image: url(http://www.wordmstemplates.com/wp-content/uploads/2015/08/lined-paper-template-9898.jpg);
+}
+
+#output {
+    WIDTH: 399px; 
+    HEIGHT: 182px; 
+    background-color: transparent;
+    overflow:auto;
+}
+
+ul.tab {
+    list-style-type: none;
+    margin: 1;
+    padding: 1;
+    overflow:auto;
+    border: 1px solid #006037;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: ##00d1e0;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #006037;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeout 2s;
+    animation: fadeout 2s;
+    overflow:auto;
+}
+
+@-webkit-keyframes fadeout {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
